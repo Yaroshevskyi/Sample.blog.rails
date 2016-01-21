@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
-   def index
+  before_filter :authenticate_user!
+
+  def index
     @articles = Article.all  
   end
 

@@ -48,3 +48,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 
 gem 'bcrypt-ruby', '3.1.1.rc1', :require => 'bcrypt'
+
+group :test, :development do
+  gem 'rspec-rails', '~> 2.4'
+  gem 'capybara'
+end
